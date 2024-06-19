@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-image: url(../img/fondo_login.webp);
+}
+
+.container_todo {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+/*---------------------------------------CAJA AZUL TRASERA----------------------------------------------------*/
+.caja_trasera {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+}
+
+.caja_trasera div {
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+.caja_trasera div p, .caja_trasera div button {
+    margin-top: 30px;
+}
+
+.caja_trasera div h3 {
+    font-weight: 500;
+    font-size: 26px
+}
+
+.caja_trasera button {
+    padding: 10px 40px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: all 300ms;
+}
+
+.caja_trasera button:hover {
+    background-color: white;
+    color: #46A2FD;
+}
+
+
+/*---------------------------------------FORMULARIOS----------------------------------------------------*/
+
+.container_login_registro {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    transition: left 500ms;
+}
+
+.container_login_registro form{
+    width: 100%;
+    padding: 80px 20px;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.container_login_registro form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
+}
+
+.container_login_registro form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: #cfcece;
+    outline: none;
+}
+
+.container_login_registro form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    color: white;
+    cursor: pointer;
+}
+
+.container_login_registro form button:hover {
+    background: #007ffd;
+}
+
+.formulario_login {
+    display: block;
+}
+
+.formulario_registro {
+    display: none;
+}
